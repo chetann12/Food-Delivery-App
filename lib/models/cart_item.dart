@@ -4,9 +4,9 @@ class CartItem {
   final String image;
   final double price;
   final String? description;
+  final bool isVeg;
+  final double? rating;
   int quantity;
-  final String? deliveryAddress;
-  final String? phoneNumber;
 
   CartItem({
     required this.id,
@@ -14,8 +14,8 @@ class CartItem {
     required this.image,
     required this.price,
     this.description,
+    required this.isVeg,
+    this.rating,
     this.quantity = 1,
-    this.deliveryAddress,
-    this.phoneNumber,
   });
 }
